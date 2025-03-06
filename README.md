@@ -1,1 +1,1 @@
-# ML-assisted-design-model-for-dapped-end-connections-
+# ML-assisted design model for dapped-end connections
