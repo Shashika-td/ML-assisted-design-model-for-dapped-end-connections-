@@ -36,14 +36,14 @@ First, you need to save the trained ML model to your local disk using the follow
   # Save trained model
   joblib.dump(model, "trained_model.pkl")
   ```
-If the Model is an ANN or Hybrid ANN:
+#### If the Model is an ANN or Hybrid ANN:
 
 If your model is an Artificial Neural Network (ANN) or a Hybrid ANN, it was likely trained on scaled data. In this case, you must also save the corresponding scaler used to scale the dataset:
   ```bash
   # Save the scaler used during training
   joblib.dump(scaler, "scaler.pkl")
   ```
-If the Model is a Classical ML Model:
+#### If the Model is a Classical ML Model:
 
 If you are using a classical ML model such as Extreme Gradient Boosting, Random Forest, or Decision Trees, and it was trained on non-scaled parameters, then there is no need to scale the input data before making predictions.
 
