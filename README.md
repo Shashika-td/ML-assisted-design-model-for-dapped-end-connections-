@@ -22,7 +22,18 @@ The following libraries are required to run the Python script. Each library can 
   ```bash
   pip install numpy
   ```
-  - `pandas`: Install using
+- `pandas`: Install using
   ```bash
   pip install pandas
   ```
+## How to use
+
+### 1. Save the trained ML model
+First, you need to save the trained ML model to your local disk using the following code.
+  ```bash
+  import joblib
+
+  # Save trained model
+  joblib.dump(model, "trained_model.pkl")
+  ```
+
