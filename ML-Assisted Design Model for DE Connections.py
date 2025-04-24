@@ -27,6 +27,11 @@ ad_value = 0.47  # a/d ratio of the connections (Range: 0.23 - 1.51)
 
 number_of_gen_data = 10000  # Number of devisions samples
 
+variable_features = [
+    "Num of Flex_layers", "Flex_Spacing", "Flex_RF_Strength",
+    "Number of Han_layers", "Hanger_spacing", "Hanger_Strength", "Com. Strength"
+]
+
 # Define min-max values for each variable feature
 min_max_vals = {
     "Num of Flex_layers": {"min": 1, "max": 4},
