@@ -4,7 +4,7 @@ import joblib
 
 # Load the trained model
 try:
-    model = joblib.load("trained_GA_ANN_model.pkl")
+    model = joblib.load("GA_ANN_model.pkl")
     print("Model loaded successfully!")
 except FileNotFoundError:
     print("Error: Model file not found")
@@ -12,7 +12,7 @@ except FileNotFoundError:
 
 # Load the scaler used in training (To scale input parameters before making predictions)
 try:
-    scaler = joblib.load("scaler.pkl") 
+    scaler = joblib.load("scaler.save") 
     print("Scaler loaded successfully!")
 except FileNotFoundError:
     print("Error: Scaler file not found")
@@ -36,11 +36,11 @@ variable_features = [
 min_max_vals = {
     "Num of Flex_layers": {"min": 1, "max": 4},
     "Flex_Spacing": {"min": 0, "max": 210},
-    "Flex_RF_Strength": {"min": 67.62, "max": 1282.2},
+    "Flex_RF_Strength": {"min": 67.62, "max": 1737.5},
     "Number of Han_layers": {"min": 1, "max": 6},
     "Hanger_spacing": {"min": 0, "max": 180},
-    "Hanger_Strength": {"min": 58.73, "max": 1456.3},
-    "Com. Strength": {"min": 25, "max": 71.6}
+    "Hanger_Strength": {"min": 58.73, "max": 1630.4},
+    "Com. Strength": {"min": 21, "max": 63}
 }
 # Generate random input data within min-max ranges
 gen_data = np.zeros((number_of_gen_data, len(variable_features)))  # Pre-allocate array
